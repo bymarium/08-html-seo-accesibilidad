@@ -64,8 +64,8 @@
       </div>
     </section>
 
-    <section class="right">
-      <div>
+    <section>
+      <div class="right">
         <article class="article">
           <picture class="article__bg">
             <source srcset="./public/images/dark/bg-dark.webp" media="(prefers-color-scheme: dark)">
@@ -75,8 +75,8 @@
             <source srcset="./public/images/dark/device-dark.webp" media="(prefers-color-scheme: dark)">
             <img src="./public/images/light/device-light.webp" alt="Interface of a wallet with its total balance and list of coins.">
           </picture>
-          <span class="article__title">EXPLORE <br> GLOW FEATURES</span>
-          <div class="article__arrow">
+          <span class="article__title article__title--mini">EXPLORE <br> GLOW FEATURES</span>
+          <div class="article__icon article__icon--arrow">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M19 12l-7 7-7-7"></path></svg>
           </div>
         </article>
@@ -86,7 +86,7 @@
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M10.075 4.143c-.138-.522.287-1.16 1.136-2.435C11.913.656 12.264.13 12.74.027a1.2 1.2 0 0 1 .506 0c.475.102.826.629 1.528 1.681.85 1.275 1.275 1.913 1.137 2.435a1.2 1.2 0 0 1-.262.49c-.243.274-.675.362-1.406.39v6.314a3.75 3.75 0 1 1-7.5 0v-6a1.25 1.25 0 1 0-2.5 0v5.313c.731.028 1.163.116 1.406.391a1.2 1.2 0 0 1 .262.49c.138.522-.287 1.16-1.137 2.434-.702 1.052-1.053 1.579-1.528 1.681-.167.036-.34.036-.506 0-.476-.102-.827-.629-1.529-1.681C.361 12.69-.063 12.053.075 11.53a1.2 1.2 0 0 1 .261-.489c.244-.275.675-.363 1.407-.391V5.337a3.75 3.75 0 1 1 7.5 0v6a1.25 1.25 0 0 0 2.5 0V5.023c-.732-.028-1.163-.116-1.407-.39a1.2 1.2 0 0 1-.261-.49Z"></path></svg>
           </div>
           <span class="article__title">Swap Coins with Zero Fees</span>
-          <div>
+          <div class="article__pictures">
             <picture class="article__coin-left">
               <source srcset="./public/images/dark/coin-left-dark.webp" media="(prefers-color-scheme: dark)">
               <img src="./public/images/light/coin-left-light.webp" alt="Image of a virtual currency wallet showing digital coins.">
@@ -118,7 +118,7 @@
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm-3.934-4.524c-.454-.588-.25-1.533.155-3.423.306-1.423.459-2.135.903-2.65.086-.1.179-.193.278-.278.516-.445 1.228-.598 2.65-.904 1.89-.406 2.836-.609 3.424-.155a1.6 1.6 0 0 1 .288.289c.454.588.251 1.533-.155 3.423-.305 1.423-.458 2.135-.903 2.65-.086.1-.178.192-.278.278-.516.445-1.227.598-2.65.904-1.89.405-2.835.608-3.423.155a1.597 1.597 0 0 1-.29-.29Zm4.792-4.503a1.333 1.333 0 1 1-1.886 1.885 1.333 1.333 0 0 1 1.886-1.885Z" clip-rule="evenodd"></path></svg>
           </div>
           <span class="article__title">Effortlessly Explore NFTs</span>
-          <div>
+          <div class="article__pictures article__pictures--three">
             <picture class="article__device-1">
               <source srcset="./public/images/dark/device-1-dark.webp" media="(prefers-color-scheme: dark)">
               <img src="./public/images/light/device-1-light.webp" alt="Image of coin finder.">
@@ -139,10 +139,16 @@
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M13.594 5.048c-.78-1-2.602-3.711-3.852-4.796-1.25-1.085-2.397 4.532-3.75 6.085C4.639 7.89 3.155 4.113 2.39 5.049A6.53 6.53 0 0 0 .992 9.094c0 3.718 3.14 6.743 7 6.743s7-3.026 7-6.746a6.519 6.519 0 0 0-1.398-4.043Z"></path></svg>
           </div>
           <span class="article__title">Received spam tokens? <br> Burn them and earn SOL.</span>
-          <div>
+          <div class="article__pictures article__pictures--circle">
+            <div class="article__circle"></div>
+            <picture class="article__device-mask">
+              <source srcset="./public/images/dark/device-mask-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="./public/images/light/device-mask-light.png" alt = "Image of a mask.">
+            </picture>
             <picture class="article__video">
-              <source srcset="./public/videos/burn-dark.mp4" media="(prefers-color-scheme: dark)">
               <video src="./public/videos/burn-light.mp4" autoplay loop muted></video>
+              <video src="./public/videos/burn-dark.mp4" autoplay loop muted></video>
+            </picture>
           </div>
         </article>
 
@@ -150,8 +156,8 @@
           <div class="article__icon">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M.377 7.836c0 1.243 1 2.243 3 4.243l.444.444c2 2 3 3 4.242 3 1.243 0 2.243-1 4.243-3l.444-.444c2-2 3-3 3-4.243 0-1.242-1-2.242-3-4.242l-.444-.444c-2-2-3-3-4.243-3-1.242 0-2.242 1-4.242 3l-.444.444c-2 2-3 3-3 4.242Zm11.367-.84a1 1 0 0 0-1.504-1.319L9.06 7.024l-.845-.88a1 1 0 0 0-1.429-.015l-2 2A1 1 0 1 0 6.2 9.543l1.279-1.278.893.93a1 1 0 0 0 1.473-.033l1.9-2.166Z"></path></svg>
           </div>
-          <span class="article__title">Stake your tokens</span>
-          <picture class="activity__stake">
+          <span class="article__title">Stake and Earn SOL</span>
+          <picture class="article__stake">
             <source srcset="./public/images/dark/stake-dark.webp" media="(prefers-color-scheme: dark)">
             <img src="./public/images/light/stake-light.webp" alt="Image of staking tokens.">
           </picture>
@@ -165,6 +171,10 @@
           <picture class="article__browser">
             <source srcset="./public/images/dark/browser-dark.webp" media="(prefers-color-scheme: dark)">
             <img src="./public/images/light/browser-light.webp" alt="Image of browser.">
+          </picture>
+          <picture class="article__device-gray">
+            <source srcset="./public/images/dark/device-dark-gray.webp" media="(prefers-color-scheme: dark)">
+            <img src="./public/images/light/device-light-gray.webp" alt="">
           </picture>
         </article>
 
