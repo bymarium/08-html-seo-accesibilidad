@@ -1,6 +1,7 @@
 @use './mixin.scss' as mixin;
 @use './variables.scss' as variables;
 @use './general.scss';
+@use './theme.scss';
 
 .header {
   position: fixed;
@@ -407,7 +408,7 @@ main {
       }
 
       span {
-        background-color: variables.$gray-90 !important;
+        background-color: variables.$gray-90;
         width: 80px;
         height: 40px;
         padding: 10px;
