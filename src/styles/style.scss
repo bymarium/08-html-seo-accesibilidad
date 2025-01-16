@@ -144,7 +144,6 @@ main {
     align-items: center;
 
     &__icon {
-      background-color: variables.$blue;
       width: 48px;
       height: 48px;
       border-radius: 50px;
@@ -153,7 +152,6 @@ main {
       margin-top: 40px;
 
       svg {
-        background-color: variables.$blue;
         border-radius: 50px;
         width: 24px;
         height: auto;
@@ -416,7 +414,7 @@ main {
         text-align: center;
       }
 
-      &:hover{
+      &:hover {
 
         background-color: variables.$gray-110;
       }
@@ -445,9 +443,11 @@ main {
 
       i {
         background: none;
+
         svg {
           width: 18px;
           background-color: transparent;
+
           path {
             color: black;
           }
@@ -464,7 +464,28 @@ main {
         background-color: variables.$gray-40;
       }
     }
+
+    $colors: (
+      1: variables.$blue,
+      2: variables.$orange,
+      3: variables.$green,
+      4: variables.$red,
+      5: variables.$purple,
+      6: variables.$mustard,
+    );
+
+  @each $key, $value in $colors {
+    &:nth-child(#{$key + 1}) {
+      .article__icon {
+        background-color: $value;
+
+        svg {
+          background-color: $value;
+        }
+      }
+    }
   }
+}
 }
 
 footer {
