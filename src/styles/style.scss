@@ -422,38 +422,38 @@ main {
 }
 }
 
-footer {
+.footer {
   @include mixin.fixed(20px, 2);
   bottom: 0;
   left: 0;
   margin-bottom: 10px;
   max-width: 50%;
 
-  .footer {
+  &__list {
     @include mixin.flex(row, flex-start, stretch, 15px);
     list-style: none;
+  }
 
-    &__item {
-      font-size: 16px;
+  &__item {
+    font-size: 16px;
 
-      a {
-        @include mixin.flex(row, flex-start, center, 0);
-        color: variables.$gray-60;
-        transition: color 0.3s ease;
+    a {
+      @include mixin.flex(row, flex-start, center, 0);
+      color: variables.$gray-60;
+      transition: color 0.3s ease;
 
-        svg {
-          @include mixin.radius(17px, auto, 0);
+      svg {
+        @include mixin.radius(17px, auto, 0);
 
-          path {
-            color: variables.$gray-60;
-            transition: color 0.3s ease;
-          }
+        path {
+          color: variables.$gray-60;
+          transition: color 0.3s ease;
         }
+      }
 
-        &:hover,
-        path:hover {
-          color: variables.$gray-40;
-        }
+      &:hover,
+      path:hover {
+        color: variables.$gray-40;
       }
     }
   }
