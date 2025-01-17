@@ -114,4 +114,16 @@
       color: variables.$gray-70 !important;
     }
   }
+
+  .modal {
+    background-color: variables.$modal-bg-lg !important;
+
+    &__content, &__logo {
+      background-color: variables.$white !important;
+    }
+
+    &__content {
+      box-shadow: variables.$shadow-modal-lg !important;
+    }
+  }
 }
