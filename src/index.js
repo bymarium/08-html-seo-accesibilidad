@@ -3,12 +3,13 @@ const modal = document.querySelector(".modal");
 
 modalOpen.forEach((btn) => {
   btn.addEventListener("click", () => {
-    modal.classList.add("modal--open");
+    modal.showModal(); 
+    modal.querySelector(".modal__content").focus();
   });
 });
 
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
-    modal.classList.remove("modal--open");
+    modal.close();
   }
 });

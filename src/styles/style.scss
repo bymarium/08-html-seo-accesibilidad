@@ -414,7 +414,9 @@ main {
 
   @each $key, $value in $colors {
     &:nth-child(#{$key + 1}) {
-      .article__icon, svg {
+
+      .article__icon,
+      svg {
         background-color: $value;
       }
     }
@@ -460,15 +462,17 @@ main {
 }
 
 .modal {
+  all: unset;
   @include mixin.fixed(0, 3);
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  border: none;
   background-color: variables.$modal-bg-dk;
   display: none;
 
-  &--open {
+  &[open] {
     display: block;
   }
 
@@ -481,12 +485,13 @@ main {
     top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    outline: none;
   }
 
   &__logo {
     width: 52px;
     background-color: variables.$modal-bg;
+
     svg {
       background: none;
     }
